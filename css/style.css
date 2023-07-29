@@ -722,3 +722,137 @@ h1.ras-underline::after {
     /* Set the color of the underline to orange or any color you prefer */
     background-color: #6b1822;
 }
+/* CSS for the event thumbnails */
+.event-thumbnail {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* CSS for the overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    display: none;
+}
+
+/* Show the overlay on hover */
+.event-thumbnail:hover .overlay {
+    display: block;
+}
+/* CSS for the event thumbnails container */
+.thumbnails-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.overlay {
+    /* ... (Other code remains unchanged) ... */
+    overflow: hidden; /* Hide the overflow of the description text */
+    max-height: 0; /* Start with height 0, and it will grow on hover */
+    transition: max-height 0.3s; /* Add smooth transition effect */
+}
+
+.event-thumbnail:hover .overlay {
+    max-height: 1000px; /* Set a large value to show the full description on hover */
+}
+/* CSS for the subfolder cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-left: 1%;
+    margin-right: 1%;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide the overflow of the text */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    text-align: center;
+}
+
+/* Add spacing between the cards */
+.row .col-lg-2,
+.row .col-md-4,
+.row .col-sm-6 {
+    margin-bottom: 15px;
+}
+/* CSS for the subfolder cards */
+.gallery-navbar .custom-nav-link {
+    flex: 1 1 0; /* Allow the cards to grow and shrink with available space */
+    max-width: 200px; /* Limit the maximum width of each card */
+    text-align: center; /* Center the card content */
+}
+
+.gallery-navbar .custom-nav-link .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 0 5px; /* Add some horizontal margin between the cards */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide the overflow of the text */
+}
+
+.gallery-navbar .custom-nav-link .card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-navbar .custom-nav-link .card-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* CSS for the event thumbnails container */
+.thumbnails-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* CSS for the event thumbnails container */
+.thumbnails-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+/* CSS for the subfolder cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 0 0 calc(20% - 20px); /* Set the width of each card to 20% of the container width with a 20px gap */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    text-align: center;
+}
+
+/* Update the style for the active navbar link */
+.custom-nav-link.active .card {
+    background-color: #9d9d9d;
+    color: #fff;
+}
+
+.custom-nav-link.active .card:hover {
+    background-color: #5b5b5b;
+}
