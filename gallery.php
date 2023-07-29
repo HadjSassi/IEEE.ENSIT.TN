@@ -1,5 +1,3 @@
-<?php
-echo '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,11 +60,11 @@ echo '
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Alumni</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="alumni1.html" class="dropdown-item">2022-2023</a>
-                                <a href="alumni2.html" class="dropdown-item">2021-2022</a>
+                                <a href="alumni2.html" class="dropdown-item">2022-2023</a>
+                                <a href="alumni1.html" class="dropdown-item">2021-2022</a>
                             </div>
                         </div>
-                        <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                        <a href="gallery.php" class="nav-item nav-link active">Gallery</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Chapters</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
@@ -100,13 +98,52 @@ echo '
     <!-- Page Header End -->
 
 
-    <!-- gallery Start -->
-    <div class="container-xxl pt-5">
-        <div class="container">
-<!--            todo add here the php code-->
+<!-- gallery Start -->
+<div class="container-xxl pt-5">
+    <div class="container">
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-white sticky-top mb-4 gallery-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                    <!-- Gallery subfolder cards -->
+                    <?php
+                    // Gallery directory path
+                    $galleryPath = 'img/Gallery/';
+
+                    // Get the subdirectories under the gallery folder
+                    $subFolders = glob($galleryPath . '*', GLOB_ONLYDIR);
+
+                    // Loop through subdirectories and create subfolder cards
+                    $first = true;
+                    $first = true;
+                    foreach ($subFolders as $subFolder) {
+                        $subFolderName = basename($subFolder);
+                        $coverImagePath = glob($subFolder . '/couverture.*');
+                        $coverImageSrc = isset($coverImagePath[0]) ? $coverImagePath[0] : 'img/default-cover.jpg'; // Use a default cover image if no specific cover image is found
+                        $activeClass = $first ? 'active' : ''; // Add "active" class to the first subfolder item
+                        $first = false;
+                        echo '
+                        <a href="#" style="cursor:pointer;" class="text-decoration-none custom-nav-link ' . $activeClass . '" data-subfolder="' . $subFolderName . '" onclick="loadEventThumbnails(\'' . $subFolderName . '\', this)">
+                            <div class="card h-100">
+                                <div class="card-img-top" style="background-image: url(' . $coverImageSrc . ');"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">' . ucfirst($subFolderName) . '</h5>
+                                </div>
+                            </div>
+                        </a>';
+                    }
+                    ?>
+                </nav>
+            </div>
         </div>
+        <!-- Navbar End -->
+
+        <!-- Gallery Thumbnails will be dynamically added here using AJAX -->
+        <div id="galleryThumbnails" class="thumbnails-container"></div> <!-- New div to hold the dynamically loaded event thumbnails -->
     </div>
-    <!-- gallery End -->
+</div>
+<!-- gallery End -->
+
 
 
     <!-- Footer Start -->
@@ -185,19 +222,114 @@ echo '
             class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+   <!-- JavaScript Libraries -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="lib/wow/wow.min.js"></script>
+       <script src="lib/easing/easing.min.js"></script>
+       <script src="lib/waypoints/waypoints.min.js"></script>
+       <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+       <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+       <!-- Template Javascript -->
+       <script src="js/main.js"></script>
+    <script>
+        // Function to create a div for each event thumbnail
+        function createEventThumbnail(subFolder, event) {
+            const card = document.createElement('div');
+            card.classList.add('card', 'h-100');
+            card.style.cursor = 'pointer'; // Add cursor: pointer style
+
+            const imageContainer = document.createElement('div');
+            imageContainer.style.backgroundImage = `url(img/Gallery/${subFolder}/${event}/couverture.png)`;
+            imageContainer.style.backgroundSize = 'cover';
+            imageContainer.style.backgroundPosition = 'center';
+            imageContainer.style.width = '100%';
+            imageContainer.style.height = '200px'; // Set the height of the image container
+            card.appendChild(imageContainer);
+
+            const cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+
+            const title = document.createElement('h5');
+            title.classList.add('card-title');
+            title.textContent = event;
+
+            // Add click event listener to the event thumbnail
+            card.addEventListener('click', function () {
+                redirectToEventPage(subFolder, event);
+            });
+
+            cardBody.appendChild(title);
+            card.appendChild(cardBody);
+            return card;
+        }
+        function redirectToEventPage(subFolder, event) {
+            const eventName = encodeURIComponent(event);
+            const url = `event.php?chapter=${subFolder}&event=${eventName}`;
+
+            // Redirect to the event page
+            window.location.href = url;
+        }
+
+        // Function to load and show event thumbnails for the selected subfolder
+        function loadEventThumbnails(subFolder, clickedLink) {
+                const container = document.getElementById('galleryThumbnails');
+                container.innerHTML = ''; // Clear the container
+
+                fetch(`getEvents.php?subfolder=${subFolder}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const events = data;
+                        events.forEach(event => {
+                            const eventThumbnail = createEventThumbnail(subFolder, event);
+                            container.appendChild(eventThumbnail);
+                        });
+
+                        // Remove the 'active' class from all navbar items
+                        const navItems = document.querySelectorAll('.custom-nav-link');
+                        navItems.forEach(item => {
+                            item.classList.remove('active');
+                        });
+
+                        // Add the "active" class to the clicked navbar item
+                        clickedLink.classList.add('active');
+                    })
+                    .catch(error => {
+                        console.error('Error fetching events:', error);
+                    });
+            }
+
+        // Attach event listener to the navbar parent element (.container)
+            document.querySelector('.container').addEventListener('click', function (event) {
+                const target = event.target;
+                // Check if the clicked element has the class "nav-link"
+                if (target.classList.contains('nav-link')) {
+                    event.preventDefault(); // Prevent default link behavior
+
+                    // Get the subfolder name from the link's text content
+                    const subFolderName = target.textContent.toLowerCase();
+
+                    // Call the function to load and show events for the selected subfolder
+                    loadEventThumbnails(subFolderName, target);
+                }
+            });
+            // Function to activate the default subfolder ("sb") and load its event thumbnails
+            function activateDefaultSubfolder() {
+                const defaultSubFolderName = 'sb'; // Set the default subfolder name
+                const defaultSubfolderLink = document.querySelector(`.custom-nav-link[data-subfolder="${defaultSubFolderName}"]`);
+
+                if (defaultSubfolderLink) {
+                    defaultSubfolderLink.classList.add('active');
+                    loadEventThumbnails(defaultSubFolderName, defaultSubfolderLink); // Trigger the click event on the default subfolder link
+                }
+            }
+
+            // Call the function to activate the default subfolder on page load
+            activateDefaultSubfolder();
+    </script>
+
+
 </body>
 
 </html>
-';
-?>
