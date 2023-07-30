@@ -68,12 +68,12 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Chapters</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">CS</a>
-                                <a href="team.html" class="dropdown-item">RAS</a>
-                                <a href="testimonial.html" class="dropdown-item">IAS</a>
-                                <a href="testimonial.html" class="dropdown-item">AESS</a>
-                                <a href="quote.html" class="dropdown-item">PES</a>
-                                <a href="404.html" class="dropdown-item">WIE</a>
+                                <a href="cs.html" class="dropdown-item">CS</a>
+                                <a href="ras.html" class="dropdown-item">RAS</a>
+                                <a href="ias.html" class="dropdown-item">IAS</a>
+                                <a href="aess.html" class="dropdown-item">AESS</a>
+                                <a href="pes.html" class="dropdown-item">PES</a>
+                                <a href="wie.html" class="dropdown-item">WIE</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>

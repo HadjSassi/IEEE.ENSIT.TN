@@ -182,19 +182,19 @@
     background-size: cover;
 }
 .gallery-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/gal6.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/4.jpg) center center no-repeat;
     background-size: cover;
 }
 .event-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/gal.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/7.jpg) center center no-repeat;
     background-size: cover;
 }
 .alumni2-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic2.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/picsev.jpg) center center no-repeat;
     background-size: cover;
 }
 .alumni-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/20.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -222,7 +222,21 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic3.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/6.jpg) left center no-repeat;
+    background-size: cover;
+}
+/*** About ***/
+.about-cs {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/14.jpg) left center no-repeat;
+    background-size: cover;
+}
+/*** About ***/
+.about-aess {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/5.jpg) left center no-repeat;
+    background-size: cover;
+}
+.about-ras {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/38.jpg) left center no-repeat;
     background-size: cover;
 }
 
