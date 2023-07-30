@@ -182,11 +182,19 @@
     background-size: cover;
 }
 .gallery-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/gal6.jpg) center center no-repeat;
+    background-size: cover;
+}
+.event-header {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/gal.jpg) center center no-repeat;
+    background-size: cover;
+}
+.alumni2-header {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic2.jpeg) center center no-repeat;
     background-size: cover;
 }
 .alumni-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -214,7 +222,7 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/about.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic3.jpg) left center no-repeat;
     background-size: cover;
 }
 
@@ -855,4 +863,47 @@ h1.ras-underline::after {
 
 .custom-nav-link.active .card:hover {
     background-color: #5b5b5b;
+}
+/* Add this CSS to center the icons */
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*** Footer ***/
+.footer {
+    color: var(--light);
+}
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    color: var(--light);
+}
+
+
+.copyright a:hover {
+    color: var(--primary) !important;
 }

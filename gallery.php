@@ -68,12 +68,12 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Chapters</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">CS</a>
-                                <a href="team.html" class="dropdown-item">RAS</a>
-                                <a href="testimonial.html" class="dropdown-item">IAS</a>
-                                <a href="testimonial.html" class="dropdown-item">AESS</a>
-                                <a href="quote.html" class="dropdown-item">PES</a>
-                                <a href="404.html" class="dropdown-item">WIE</a>
+                                <a href="cs.html" class="dropdown-item">CS</a>
+                                <a href="ras.html" class="dropdown-item">RAS</a>
+                                <a href="ias.html" class="dropdown-item">IAS</a>
+                                <a href="aess.html" class="dropdown-item">AESS</a>
+                                <a href="pes.html" class="dropdown-item">PES</a>
+                                <a href="wie.html" class="dropdown-item">WIE</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -113,7 +113,15 @@
 
                     // Get the subdirectories under the gallery folder
                     $subFolders = glob($galleryPath . '*', GLOB_ONLYDIR);
+                    // Check if "SB" folder exists
+                    $sbFolderIndex = array_search($galleryPath . 'SB', $subFolders);
 
+                    // If "SB" folder exists, remove it from the array and add it to the beginning
+                    if ($sbFolderIndex !== false) {
+                        $sbFolder = $subFolders[$sbFolderIndex];
+                        unset($subFolders[$sbFolderIndex]);
+                        array_unshift($subFolders, $sbFolder);
+                    }
                     // Loop through subdirectories and create subfolder cards
                     $first = true;
                     $first = true;
@@ -312,7 +320,7 @@
             });
             // Function to activate the default subfolder ("sb") and load its event thumbnails
             function activateDefaultSubfolder() {
-                const defaultSubFolderName = 'sb'; // Set the default subfolder name
+                const defaultSubFolderName = 'SB'; // Set the default subfolder name
                 const defaultSubfolderLink = document.querySelector(`.custom-nav-link[data-subfolder="${defaultSubFolderName}"]`);
 
                 if (defaultSubfolderLink) {
