@@ -1,0 +1,29 @@
+/********** Template CSS **********/
+/* CSS HEX */
+:root{
+    --bossanova: #5f2d67; 
+    --wisteria: #9c54a8;
+    --trendy-pink: #8f7194;
+    --mountain-mist: #98909a;
+    --salt-box: #625c64;
+    --fedora: #6c626b;
+    --dusty-gray: #a4949c; 
+    --london-hue: #c9b0d0;
+    --prim: #f7f2f7;
+    --snuff: #ead3ee;
+
+    --primary-wie: #9c54a8;
+    --secondary-wie: #625c64;
+    --light-wie: #ead3ee;
+    --dark-wie: #5f2d67;
+
+    --white:#ffffff;
+    --black: #000000;
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+.icon-color{
+    color: var(--dark) !important;
+}
