@@ -71,6 +71,7 @@
                                 <a href="feature.html" class="dropdown-item">CS</a>
                                 <a href="team.html" class="dropdown-item">RAS</a>
                                 <a href="testimonial.html" class="dropdown-item">IAS</a>
+                                <a href="testimonial.html" class="dropdown-item">AESS</a>
                                 <a href="quote.html" class="dropdown-item">PES</a>
                                 <a href="404.html" class="dropdown-item">WIE</a>
                             </div>
@@ -90,7 +91,7 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid gallery-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid event-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h1 class="display-2 text-white mb-4 animated slideInDown">Gallery</h1>
         </div>
@@ -196,75 +197,71 @@
     </div>
     <!-- Event Details End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+           <div class="container">
+               <div class="row g-5">
+                   <div class="col-lg-3 col-md-6">
+                       <img src="img/logos/ieee%20(1).png" width="200" alt="logo sb ieee" class="mb-3"/>
+                       <p>
 
+                           ENSIT Student Branch, since 2012, embraces IEEE's values for innovation and humanity. 120+ members strong, we advance skills for a better engineering future.
+                       </p>
+                   </div>
+                   <div class="col-lg-3 col-md-6">
+                       <h4 class="text-white mb-4">Contact</h4>
+                       <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>05 Ave Taha Hussein, Tunis 1008 à l'ENSIT</p>
+                       <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 95 741 882</p>
+                       <a href="mailto:ieee.ensit.student.branch@gmail.com" class="mb-2 text-white"><i class="fa fa-envelope me-3"></i>ieee.ensit.student.branch<br>@gmail.com
+                       </a>
+                       <div class="d-flex pt-3">
+                           <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.instagram.com/ieee_ensit_student_branch/" aria-label="Twitter">
+                               <i class="fab fa-instagram icon-color"></i>
+                           </a>
+                           <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.facebook.com/ieee.ensit   " aria-label="facebook">
+                               <i class="fab fa-facebook-f icon-color"></i>
+                           </a>
+                           <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.youtube.com/@ieeeensit2837" aria-label="youtube">
+                               <i class="fab fa-youtube icon-color"></i>
+                           </a>
+                           <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.linkedin.com/company/ieee-ensit-student-branch/mycompany/" aria-label="linkedin">
+                               <i class="fab fa-linkedin-in icon-color"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-md-6">
+                       <div class="row">
+                           <h4 class="text-white mb-4">Quick Links</h4>
+                           <div class="col-6">
+                               <a class="btn btn-link" href="index.html#aboutUSindex">About Us</a>
+                               <a class="btn btn-link" href="contact.html">Contact Us</a>
+                               <a class="btn btn-link" href="gallery.php">Gallery</a>
+                               <a class="btn btn-link" href="index.html#teamindex">Team</a>
+                               <a class="btn btn-link" href="alumni1.html">Allmuni2021</a>
+                               <a class="btn btn-link" href="alumni2.html">Allumni2022</a>
+                               <a class="btn btn-link" href="index.html#chaptersIndex">Chapters</a>
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you\'d like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-                    Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
+                           </div>
+                           <div class="col-6">
+                               <a class="btn btn-link" href="index.html#">SB</a>
+                               <a class="btn btn-link" href="cs.html">CS</a>
+                               <a class="btn btn-link" href="ras.html">RAS</a>
+                               <a class="btn btn-link" href="ias.html">IAS</a>
+                               <a class="btn btn-link" href="aess.html">AESS</a>
+                               <a class="btn btn-link" href="pes.html">PES</a>
+                               <a class="btn btn-link" href="wie.html">WIE</a>
+                           </div>
+                       </div>
+
+                   </div>
+                   <div class="col-lg-3 col-md-6">
+                       <h4 class="text-white mb-4">Localisation</h4>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d629.4879921325812!2d10.179256687986872!3d36.784739211827876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd340576fc1a05%3A0x25fc1aa869f8cfb6!2s%C3%89cole%20nationale%20sup%C3%A9rieure%20d&#39;ing%C3%A9nieurs%20de%20Tunis%20(ENSIT)!5e0!3m2!1sen!2stn!4v1690723522488!5m2!1sen!2stn" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- Footer End -->
 
 
     <!-- Back to Top -->
