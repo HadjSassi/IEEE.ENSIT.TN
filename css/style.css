@@ -239,6 +239,10 @@
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/38.jpg) left center no-repeat;
     background-size: cover;
 }
+.about-pes {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/45.jpg) left center no-repeat;
+    background-size: cover;
+}
 
 .btn-play {
     position: relative;
