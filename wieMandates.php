@@ -33,6 +33,12 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="wie/stylewie.css" rel="stylesheet">
+    <style>
+        .page-header-wie-team {
+            background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(img/wie/team-img.PNG) center center no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <!-- Spinner Start -->
@@ -42,12 +48,8 @@
     <!-- Spinner End -->
 
     <?php include("./wie/components/Header.html") ?>
-    <?php include("./wie/components/Carousel.php") ?>
-    <?php include("./wie/components/overview.php") ?>
-    <?php include("./wie/components/about-wie.php") ?>
-    <?php include("./wie/components/Members.php") ?>
-    <?php include("./wie/components/Gallary-wie.php") ?>
-    <?php include("./wie/components/Join-us-wie.php") ?>
+    <?php include("./wie/components/HeaderTeam.php") ?>
+    <?php include("./wie/components/wieMandates.php") ?>
     <?php include("./wie/components/Footer-wie.php") ?>
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>

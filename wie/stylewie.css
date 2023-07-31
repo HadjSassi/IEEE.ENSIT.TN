@@ -1,0 +1,128 @@
+/* Custom styles for the Facebook icon */
+.iconWie {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #5f2d67;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.iconWie:hover {
+    background-color: white;
+    color: #5f2d67;
+}
+/* Custom styles for the carousel "Previous" and "Next" buttons */
+#header-carousel .carousel-control-prev-icon-wie,
+#header-carousel .carousel-control-next-icon-wie {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: #5f2d67; /* Change to #5f2d67 color */
+    border: 15px solid #5f2d67; /* Change to #5f2d67 color */
+}
+
+.dropdown-menu a.dropdown-item:visited ,
+.dropdown-menu a.dropdown-item:hover {
+    background-color: #5f2d67;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-#5f2d67);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: var(--bs-#5f2d67);
+    border: 15px solid var(--bs-#5f2d67);
+}
+.custom-btn-outline-wie {
+    border-color: #5f2d67; 
+    color: #5f2d67; 
+    }
+
+    .custom-btn-outline-wie:hover {
+    border-color: #400B49; 
+    background-color: #400B49;
+    color: white; 
+    }
+    .btn-wie {
+        background-color: #5f2d67 !important; 
+        border-color: #5f2d67; 
+        color: white;  
+    }
+
+    .btn-wie:hover {
+        border-color: #400B49;  
+        background-color: #400B49; 
+        color: white; 
+    }
+    .btn-play {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: 36px;
+    height: 46px;
+    border-radius: 100%;
+    border: none;
+    outline: none !important;
+    padding: 18px 20px 20px 28px;
+    background: #5f2d67;
+}
+
+.btn-play:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #5f2d67;
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #5f2d67;
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    left: 3px;
+    border-left: 30px solid #FFFFFF;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+}
+.about-wie{
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(img/wie/1.jpg) left center no-repeat;
+    background-size: cover;
+}
+.color-wie{
+    color: #5f2d67;
+}
+

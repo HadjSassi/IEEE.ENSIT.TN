@@ -38,64 +38,12 @@
                 </div>
                 <?php } ?>
             </div>
-            <!-- Button trigger modal -->
             <div class="text-center">
-                <button type="button" class="btn btn-primary btn-wie" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Show More
+                <br/>
+                <button type="button" class="btn btn-primary btn-wie" >
+                    <a href="wieMandates.php" style="color:white;"> Show More</a>
                 </button>
             </div>
-            <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog  modal-xl">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Other Mandates</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        <?php
-                            $teamDataLast = $data['team'];
-                            foreach ($teamDataLast as $year => $teamMem) {
-                                if($year !=="2024-2023"){
-                                echo '<h1>';
-                                echo $year;
-                                echo ' Mandate</h1> </div>';
-                                echo '<div class="row" style="z-index:999;">';
-                                foreach ($teamMem as $card2) {
-                                    $image2 = $card2['image'];
-                                    $name2 = $card2['name'];
-                                    $role2 = $card2['role'];
-                                    $facebook2 = $card2['facebook'];
-                                    $twitter2 = $card2['twitter'];
-                                    $instagram2 = $card2['instagram'];
-                                    $linkedin2 = $card2['linkedin'];
-                                    echo '<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">';
-                                    echo '<div class="team-item rounded overflow-hidden pb-4">';
-                                    echo '<img class="img-fluid mb-4" src="' . $image2 . '" alt="">';
-                                    echo '<h5>' . $name2 . '</h5>';
-                                    echo '<span class="color-text">' . $role2 . '</span>';
-                                    echo '<ul class="team-social">';
-                                    echo '<li><a class="btn btn-square" href="' . $facebook2 . '" aria-label="facebook"><i class="fab fa-facebook-f"></i></a></li>';
-                                    echo '<li><a class="btn btn-square" href="' . $twitter2 . '" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>';
-                                    echo '<li><a class="btn btn-square" href="' . $instagram2 . '" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>';
-                                    echo '<li><a class="btn btn-square" href="' . $linkedin2 . '" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a></li>';
-                                    echo '</ul>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                }
-                                echo '</div>';
-                                }
-                            }
-                        ?>
-
-                        </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-
-
 
         </div>
     </div>
