@@ -29,19 +29,29 @@
                         <h5><?php echo $name; ?></h5>
                         <span class="color-wie" style="font-weight: bold;"><?php echo $role; ?></span>
                         <ul class="team-social">
-                            <li><a class="btn btn-square" href="<?php echo $facebook; ?>" aria-label="facebook"><i class="fab fa-facebook-f iconWie"></i></a></li>
-                            <li><a class="btn btn-square" href="<?php echo $twitter; ?>" aria-label="twitter"><i class="fab fa-twitter iconWie"></i></a></li>
-                            <li><a class="btn btn-square" href="<?php echo $instagram; ?>" aria-label="instagram"><i class="fab fa-instagram iconWie"></i></a></li>
-                            <li><a class="btn btn-square" href="<?php echo $linkedin; ?>" aria-label="linkedin"><i class="fab fa-linkedin-in iconWie"></i></a></li>
-                        </ul>
+                        <?php
+                            $facebookLink = ($facebook !== '') ? '<li><a class="btn btn-square" href="' . $facebook . '" aria-label="facebook"><i class="fab fa-facebook-f iconWie"></i></a></li>' : '';
+                            echo $facebookLink;
+                        
+                            $twitterLink = ($twitter !== '') ? '<li><a class="btn btn-square" href="' . $twitter . '" aria-label="twitter"><i class="fab fa-twitter iconWie"></i></a></li>' : '';
+                            echo $twitterLink;
+                        
+                            $instagramLink = ($instagram !== '') ? '<li><a class="btn btn-square" href="' . $instagram . '" aria-label="instagram"><i class="fab fa-instagram iconWie"></i></a></li>' : '';
+                            echo $instagramLink;
+                        
+                            $linkedinLink = ($linkedin !== '') ? '<li><a class="btn btn-square" href="' . $linkedin . '" aria-label="linkedin"><i class="fab fa-linkedin-in iconWie"></i></a></li>' : '';
+                            echo $linkedinLink;   
+                        ?>
+                       </ul>
                     </div>
                 </div>
                 <?php } ?>
             </div>
             <div class="text-center">
                 <br/>
-                <button type="button" class="btn btn-primary btn-wie" >
-                    <a href="wieMandates.php" style="color:white;"> Show More</a>
+
+                <button type="button" class="btn btn-primary btn-wie btn-rounded  btn-lg" data-mdb-ripple-color="#ffffff"> 
+                    <a href="wie-team.php" style="color:white;">Show More</a>
                 </button>
             </div>
 

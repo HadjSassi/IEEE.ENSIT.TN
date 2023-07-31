@@ -32,59 +32,86 @@
         "2023-2022": [
             {
                 "image": "img/wie/Team/2023-2022/1.jpg",
-                "name": "Lina Saaii",
+                "name": "Gadour Salma",
                 "role": "ChairWoman",
-                "facebook": "facebook.com",
-                "twitter": "twitter.com",
-                "instagram": "instagram.com",
-                "linkedin": "linkedin.com"
+                "facebook": "https://www.facebook.com/salma.gaddour",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
             },
             {
-                "image": "img/wie/team-2.jpg",
-                "name": "Baha Eddine Hammou",
-                "role": "Vice Chair",
-                "facebook": "facebook.com",
-                "twitter": "twitter.com",
-                "instagram": "instagram.com",
-                "linkedin": "linkedin.com"
+                "image": "img/wie/Team/2023-2022/2.jpg",
+                "name": "Yaakoubi Siwar",
+                "role": "Vice ChairWoman",
+                "facebook": "https://www.facebook.com/profile.php?id=100009703362464",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": "https://www.linkedin.com/in/siwar-yaakoubi-8a2453228/"
             },
             {
-                "image": "img/wie/team-3.jpg",
-                "name": "Wafa Zoghlami",
+                "image": "img/wie/Team/2023-2022/3.jpg",
+                "name": "Masmodi Safa",
                 "role": "General Secretary",
-                "facebook": "facebook.com",
-                "twitter": "twitter.com",
-                "instagram": "instagram.com",
-                "linkedin": "linkedin.com"
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
             }
         ],
         "2022-2021": [
             {
-                "image": "img/wie/team-1.jpg",
-                "name": "Lina Saaii",
+                "image": "img/wie/team/2021-2022/1.jpg",
+                "name": "Selmi Wiem",
                 "role": "ChairWoman",
-                "facebook": "facebook.com",
-                "twitter": "twitter.com",
-                "instagram": "instagram.com",
-                "linkedin": "linkedin.com"
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
             },
             {
-                "image": "img/wie/team-2.jpg",
-                "name": "Baha Eddine Hammou",
+                "image": "img/wie/team/2021-2022/2.jpg",
+                "name": "Chaouachi Farah",
                 "role": "Vice Chair",
-                "facebook": "facebook.com",
-                "twitter": "twitter.com",
-                "instagram": "instagram.com",
-                "linkedin": "linkedin.com"
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
             },
             {
-                "image": "img/wie/team-3.jpg",
-                "name": "Wafa Zoghlami",
+                "image": "img/wie/team/2021-2022/3.jpg",
+                "name": "Trabelsi Dorsaf",
+                "role": "Training manager",
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
+            },
+            {
+                "image": "img/wie/team/2021-2022/4.jpg",
+                "name": "Ali Rania",
+                "role": "Treasurer",
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
+            },
+            {
+                "image": "img/wie/team/2021-2022/5.jpg",
+                "name": "Mzoughi Ameni",
+                "role": "Webmaster",
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
+            },
+            {
+                "image": "img/wie/team/2021-2022/6.jpg",
+                "name": "Ouardani Dina",
                 "role": "General Secretary",
-                "facebook": "facebook.com",
-                "twitter": "twitter.com",
-                "instagram": "instagram.com",
-                "linkedin": "linkedin.com"
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
             }
         ]
     },
@@ -100,13 +127,13 @@
         "paragraph2":"Whether you're an aspiring engineer or a seasoned professional, there's a place for you at IEEE WIE Student Chapter. Engage in workshops, seminars, and outreach programs that inspire and support women pursuing engineering careers. Together, let's work towards creating a more equitable and innovative engineering community for the benefit of all."
     },
     "footer": {
-        "about": "facebook.com",
-        "facebook": "facebook.com",
-        "youtube": "facebook.com",
-        "instagram": "facebook.com",
-        "linkedin": "facebook.com",
-        "email": "facebook.com",
-        "location": "facebook.com",
-        "phone": "facebook.com"
+        "about": "Join the inspiring community of IEEE WIE Women in Engineering Chapter - Empowering Women Tech Enthusiasts Since 2021. Elevate your career and skills to new heights!",
+        "facebook": "https://www.facebook.com/profile.php?id=100066770896698",
+        "youtube": "https://www.youtube.com/@ieeeensit2837",
+        "instagram": "https://www.instagram.com/ieee_wie_ensit/",
+        "linkedin": "https://www.linkedin.com/company/ieee-ensit-student-branch/",
+        "email": "ieee.ensit.wie@gmail.com",
+        "location": "05 Ave Taha Hussein, Tunis 1008, ENSIT",
+        "phone": "+216 95 741 882"
     }
 }

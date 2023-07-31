@@ -1,5 +1,11 @@
 
-    <!-- About Start -->
+    <style>
+        .about-wie{
+            background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(img/wie/1.jpg) left center no-repeat;
+            background-size: cover;
+        }
+    </style>
+   <!-- About Start -->
         <?php 
             $jsonFile = file_get_contents('data-wie.json');
             $data = json_decode($jsonFile, true);

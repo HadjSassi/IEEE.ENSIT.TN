@@ -1,31 +1,34 @@
-     <!-- Footer Start -->
+<?php 
+     $jsonFile = file_get_contents('data-wie.json');
+     $data = json_decode($jsonFile, true);
+     $footer= $data['footer'];
+?>
+  <!-- Footer Start -->
         <div class="container-fluid footer mt-5 py-5 wow fadeIn" style="background-color:#5f2d67;" data-wow-delay="0.1s">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <img src="img/logos/wiewhite.png" width="200" alt="logo wie ieee" class="mb-3"/>
-                        <p>
-                            IEEE Women in Engineering is the largest international professional organization dedicated to promoting women engineers and scientists.
-                        </p>
+                        <p><?php echo $footer["about"]?></p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-white mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>05 Ave Taha Hussein, Tunis 1008 à l'ENSIT</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+216 95 741 882</p>
-                        <a href="mailto:ieee.ensit.wie@gmail.com" class="mb-2 text-white"><i class="fa fa-envelope me-3"></i>iieee.ensit.wie@gmail.com
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><?php echo $footer["location"]?></p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><?php echo $footer["phone"]?></p>
+                        <a href="mailto:<?php echo $footer["email"]?>" class="mb-2 text-white"><i class="fa fa-envelope me-3"></i><?php echo $footer["email"]?>
                         </a>
                         <div class="d-flex pt-3">
-                            <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.instagram.com/ieee_wie_ensit/" aria-label="Twitter">
-                                <i class="fab fa-instagram icon-color"></i>
+                            <a class="btn btn-square btn-light rounded-circle me-2" href="<?php echo $footer["instagram"]?>" aria-label="instagram">
+                                <i class="fab fa-instagram icon-wie-footer"></i>
                             </a>
-                            <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100066770896698" aria-label="facebook">
-                                <i class="fab fa-facebook-f icon-color"></i>
+                            <a class="btn btn-square btn-light rounded-circle me-2" href="<?php echo $footer["facebook"]?>" aria-label="facebook">
+                                <i class="fab fa-facebook-f icon-wie-footer"></i>
                             </a>
-                            <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.youtube.com/@ieeeensit2837" aria-label="youtube">
-                                <i class="fab fa-youtube icon-color"></i>
+                            <a class="btn btn-square btn-light rounded-circle me-2" href="<?php echo $footer["youtube"]?>" aria-label="youtube">
+                                <i class="fab fa-youtube icon-wie-footer"></i>
                             </a>
-                            <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.linkedin.com/company/ieee-ensit-student-branch/mycompany/" aria-label="linkedin">
-                                <i class="fab fa-linkedin-in icon-color"></i>
+                            <a class="btn btn-square btn-light rounded-circle me-2" href="<?php echo $footer["linkedin"]?>" aria-label="linkedin">
+                                <i class="fab fa-linkedin-in icon-wie-footer"></i>
                             </a>
                         </div>
                     </div>
@@ -49,7 +52,7 @@
                                 <a class="btn btn-link" href="ias.html">IAS</a>
                                 <a class="btn btn-link" href="aess.html">AESS</a>
                                 <a class="btn btn-link" href="pes.html">PES</a>
-                                <a class="btn btn-link" href="wie.html">WIE</a>
+                                <a class="btn btn-link" href="wie.php">WIE</a>
                             </div>
                         </div>
 
@@ -64,7 +67,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" aria-label="top">
+        <a href="#" class="btn btn-lg btn-wie btn-lg-square rounded-circle back-to-top" style="background-color:#8c269c !important" aria-label="top">
             <i class="bi bi-arrow-up"></i>
         </a>
     <!-- Back to Top End-->

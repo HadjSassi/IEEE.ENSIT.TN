@@ -7,7 +7,7 @@
     ?>
     <div class="container-xxl pt-5">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex justify-content-center align-items-center">
                 <!-- Animated Picture -->
                 <div class="col-md-6 wow fadeInLeft mt-5" data-wow-delay="0.2s">
                     <img src="img/wie/joinUsWie.gif" alt="Animated Picture" class="img-fluid">

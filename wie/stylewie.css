@@ -15,6 +15,10 @@
     background-color: white;
     color: #5f2d67;
 }
+.icon-wie-footer{
+    background-color: white;
+    color: #5f2d67;  
+}
 /* Custom styles for the carousel "Previous" and "Next" buttons */
 #header-carousel .carousel-control-prev-icon-wie,
 #header-carousel .carousel-control-next-icon-wie {
@@ -60,7 +64,7 @@
     }
 
     .btn-wie:hover {
-        border-color: #400B49;  
+        border-color:1px solid  #400B49;  
         background-color: #400B49; 
         color: white; 
     }
@@ -117,10 +121,6 @@
     border-left: 30px solid #FFFFFF;
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
-}
-.about-wie{
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(img/wie/1.jpg) left center no-repeat;
-    background-size: cover;
 }
 .color-wie{
     color: #5f2d67;
