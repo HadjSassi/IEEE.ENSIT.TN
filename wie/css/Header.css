@@ -103,17 +103,17 @@
     }
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+.wie-header{
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../../img/carousel-1.jpg) center center no-repeat !important;
     background-size: cover;
 }
 
-.page-header .breadcrumb-item+.breadcrumb-item::before {
+.wie-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
-.page-header .breadcrumb-item,
-.page-header .breadcrumb-item a {
+.wie-header .breadcrumb-item,
+.wie-header .breadcrumb-item a {
     font-size: 18px;
     color: var(--light);
 }

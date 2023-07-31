@@ -37,3 +37,11 @@
 .copyright a:hover {
     color: var(--primary-wie) !important;
 }
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}

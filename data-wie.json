@@ -1,0 +1,95 @@
+{
+    "team": {
+        "2024-2023": [
+            {
+                "image": "img/wie/Team/2024-2023/1.jpg",
+                "name": "Lina Saaii",
+                "role": "ChairWoman",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            },
+            {
+                "image": "img/wie/Team/2024-2023/2.jpg",
+                "name": "Baha Eddine Hammou",
+                "role": "Vice Chair",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            },
+            {
+                "image": "img/wie/Team/2024-2023/3.jpg",
+                "name": "Wafa Zoghlami",
+                "role": "General Secretary",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            }
+        ],
+        "2023-2022": [
+            {
+                "image": "img/wie/Team/2023-2022/1.jpg",
+                "name": "Lina Saaii",
+                "role": "ChairWoman",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            },
+            {
+                "image": "img/wie/team-2.jpg",
+                "name": "Baha Eddine Hammou",
+                "role": "Vice Chair",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            },
+            {
+                "image": "img/wie/team-3.jpg",
+                "name": "Wafa Zoghlami",
+                "role": "General Secretary",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            }
+        ],
+        "2022-2021": [
+            {
+                "image": "img/wie/team-1.jpg",
+                "name": "Lina Saaii",
+                "role": "ChairWoman",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            },
+            {
+                "image": "img/wie/team-2.jpg",
+                "name": "Baha Eddine Hammou",
+                "role": "Vice Chair",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            },
+            {
+                "image": "img/wie/team-3.jpg",
+                "name": "Wafa Zoghlami",
+                "role": "General Secretary",
+                "facebook": "facebook.com",
+                "twitter": "twitter.com",
+                "instagram": "instagram.com",
+                "linkedin": "linkedin.com"
+            }
+        ]
+    },
+    "about": "Following the lead of the global network IEEE Women in Engineering (WIE) we  The IEEE WIE ENSIT , aim to facilitate the recruitment and retention of women in technical disciplines. Our vision is based on a vibrant community of IEEE Women and men collectivity using their  diverse talents to innovate for the benefit of humanity",
+    "footer": {
+        "facebook": "facebook.com"
+    }
+}
