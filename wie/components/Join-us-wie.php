@@ -19,7 +19,7 @@
                     <h1 class="display-6 mb-5"><?php echo $joinUs["title"];?></h1>
                     <p><?php echo $joinUs["paragraph1"];?> </p>
                     <p><?php echo $joinUs["paragraph2"];?> </p>
-                    <a class="btn btn-lg btn-wie mt-4" href="about.html">Join Now</a> 
+                    <a class="btn btn-lg btn-wie mt-4" href="joinus.html">Join Now</a>
                 </div>
 
             </div>

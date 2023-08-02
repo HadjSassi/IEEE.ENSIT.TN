@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="about.html" class="nav-item nav-link ">Join Us</a>
+                        <a href="joinus.html" class="nav-item nav-link ">Join Us</a>
 
                     </div>
                     <div class="ms-auto d-none d-lg-block">

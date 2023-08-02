@@ -197,6 +197,14 @@
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/20.jpg) center center no-repeat;
     background-size: cover;
 }
+.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/18.jpg) center center no-repeat;
+    background-size: cover;
+}
+.joinus-header {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pic3.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
