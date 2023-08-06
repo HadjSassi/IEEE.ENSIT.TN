@@ -32,6 +32,28 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px; /* Adjust the margin to your liking */
+        max-width: 100%; /* Add this rule to limit the maximum width of the container */
+        box-sizing: border-box; /* Ensure the container's padding is included in the max-width */
+      }
+
+      .card-group .card {
+        flex-basis: calc(33.333% - 30px); /* Adjust the width of each card as per your layout */
+        margin: 15px; /* Adjust the margin to create spacing between cards */
+        /* Add other card styles like background-color, border, padding, etc. */
+      }
+
+      @media (max-width: 768px) { /* Adjust the breakpoint to target mobile devices */
+        .card-group .card {
+          flex-basis: 100%; /* Make each card take up 100% width on smaller screens */
+        }
+      }
+    </style>
+
 </head>
 
 <body>
@@ -77,7 +99,7 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="joinus.html" class="nav-item nav-link ">Join Us</a>
+                        <a href="about.html" class="nav-item nav-link ">Join Us</a>
 
                     </div>
                     <div class="ms-auto d-none d-lg-block">
@@ -134,7 +156,6 @@
                         echo '
                         <a href="#" style="cursor:pointer;" class="text-decoration-none custom-nav-link ' . $activeClass . '" data-subfolder="' . $subFolderName . '" onclick="loadEventThumbnails(\'' . $subFolderName . '\', this)">
                             <div class="card h-100">
-                                <div class="card-img-top" style="background-image: url(' . $coverImageSrc . ');"></div>
                                 <div class="card-body">
                                     <h5 class="card-title">' . ucfirst($subFolderName) . '</h5>
                                 </div>
@@ -148,7 +169,7 @@
         <!-- Navbar End -->
 
         <!-- Gallery Thumbnails will be dynamically added here using AJAX -->
-        <div id="galleryThumbnails" class="thumbnails-container"></div> <!-- New div to hold the dynamically loaded event thumbnails -->
+        <div id="galleryThumbnails" class="thumbnails-container card-group"></div> <!-- New div to hold the dynamically loaded event thumbnails -->
     </div>
 </div>
 <!-- gallery End -->
