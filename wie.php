@@ -44,7 +44,28 @@
     <?php include("./wie/components/Header.html") ?>
     <?php include("./wie/components/Carousel.php") ?>
     <?php include("./wie/components/overview.php") ?>
-    <?php include("./wie/components/about-wie.php") ?>
+//     <?php include("./wie/components/about-wie.php") ?>
+
+<!-- About Start -->
+<div   class="container-xxl about-wie my-5">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="1s">
+                <div class="bg-white rounded-top p-5 mt-lg-5">
+                    <h1 class="display-6 mb-4">About US</h1>
+                    <h5 class="mb-4 text-black-50 text-center">
+                        Our student branch is a vibrant and inclusive community dedicated to fostering diversity and empowering women in the field of engineering. We are part of the global IEEE WIE network, which strives to inspire, engage, and advance women in technology and engineering professions.
+                        </h5>
+                    <a class="btn btn-wie rounded-pill py-3 px-5" href="https://wie.ieee.org/">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
     <?php include("./wie/components/Members.php") ?>
     <?php include("./wie/components/Gallary-wie.php") ?>
     <?php include("./wie/components/Join-us-wie.php") ?>

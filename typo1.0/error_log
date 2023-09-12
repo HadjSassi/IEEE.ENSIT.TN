@@ -1,0 +1,35 @@
+[05-Sep-2023 12:47:20 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:47:20 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:47:20 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:47:20 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:47:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
+[05-Sep-2023 12:49:42 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:49:42 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:49:42 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:49:42 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 12:49:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
+[05-Sep-2023 13:16:23 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:16:23 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:16:23 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:16:23 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:16:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
+[05-Sep-2023 13:18:03 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:18:03 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:18:03 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:18:03 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 13:18:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[05-Sep-2023 21:25:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
+[06-Sep-2023 20:14:21 UTC] PHP Notice:  Undefined offset: 1 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[06-Sep-2023 20:14:21 UTC] PHP Notice:  Undefined offset: 2 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[06-Sep-2023 20:14:21 UTC] PHP Notice:  Undefined offset: 3 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[06-Sep-2023 20:14:21 UTC] PHP Notice:  Undefined offset: 4 in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 17
+[06-Sep-2023 20:14:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php:17) in /home/ieeetn/public_html/ftp.ieee.tn/ensit.ieee.tn/typo1.0/submit_form.php on line 36
