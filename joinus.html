@@ -120,6 +120,7 @@
 
                 The student branch aims to provide its members with opportunities for professional and personal
                 development, networking, and collaboration.
+                <span id="theJoinForm"></span>
             </p>
         </div>
     </div>
@@ -313,6 +314,11 @@
         hobbiesField.value = hobbiesField.value.replace(/\n/g, ' -> ');
         hobbiesField.value = hobbiesField.value.replace(/ /g, '_');
         otherField.value = otherField.value.replace(/ /g, '_');
+    }
+</script>
+<script>
+    window.onload = function () {
+        document.getElementById('theJoinForm').scrollIntoView();
     }
 </script>
 <!-- Template Javascript -->
