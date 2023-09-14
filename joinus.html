@@ -130,86 +130,83 @@
 <!-- join us Start -->
 <div class="container-xxl py-5">
     <div class="container">
-
         <div class="row g-5">
-            <div class=" wow fadeInUp" data-wow-delay="0.1s"
-                 style="display: inline-block;align-items: center;justify-content: center;flex-wrap: wrap;">
-
-                <form style="display: flex;flex-direction: column;align-items: center;justify-content: center;"
-                      class="myform1" method="post" action="joinus.php" onsubmit="replaceNewlines()">
-                    <div class="" style="width: 40rem;">
-
-
-                        <label for="Fname" style="font-size: 1.1rem;color: black;">Full Name :</label>
+            <div class="col-lg-6 mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <form class="myform1" method="post" action="joinus.php" onsubmit="replaceNewlines()">
+                    <div class="mb-3">
+                        <label for="Fname" class="form-label">Full Name:</label>
                         <input type="text" class="form-control" id="Fname" name="Fname">
                         <span class="err1"></span>
+                    </div>
 
-
-                        <label for="email" style="font-size: 1.1rem;color: black;">E-mail</label>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
                         <input type="email" class="form-control" id="email" name="email">
                         <span class="err2"></span>
+                    </div>
 
-
-                        <label for="date" style="font-size: 1.1rem;color: black;">Date of birth</label>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date of Birth:</label>
                         <input type="date" class="form-control" id="date" name="date">
                         <span class="err3"></span>
+                    </div>
 
-
-                        <label for="Pnumber" style="font-size: 1.1rem;color: black;">Phone Number</label>
+                    <div class="mb-3">
+                        <label for="Pnumber" class="form-label">Phone Number:</label>
                         <input type="text" class="form-control" id="Pnumber" name="Pnumber">
                         <span class="err4"></span>
+                    </div>
 
+                    <div class="mb-3">
+                        <label for="class" class="form-label">Class:</label>
+                        <select name="class" id="class" class="form-select">
+                            <option value="select">Select class</option>
+                            <option value="year1">1st year</option>
+                            <option value="year2">2nd year</option>
+                            <option value="year3">3rd year</option>
+                        </select>
+                    </div>
 
-                        <div>
-                            <label for="class" style="font-size: 1.1rem;color: black;">Class:</label>
-                            <select name="class" id="class" class="form-control" style="cursor: pointer;">
-                                <option value="select">Select class</option>
-                                <option value="year1">1st year</option>
-                                <option value="year2">2nd year</option>
-                                <option value="year3">3rd year</option>
+                    <div class="mb-3">
+                        <label for="field" class="form-label">Field of Study:</label>
+                        <select name="field" id="field" class="form-select">
+                            <option value="select">Select field of study</option>
+                            <option value="Computer Engineering">Computer Engineering</option>
+                            <option value="Industrial Engineering">Industrial Engineering</option>
+                            <option value="Mathematics and Modeling">Mathematics and Modeling</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                        </select>
+                    </div>
 
-                            </select>
-
-                        </div>
-
-                        <div>
-                            <label for="field" style="font-size: 1.1rem;color: black;">Field of study:</label>
-                            <select name="field" id="field" class="form-control" style="cursor: pointer;">
-                                <option value="select">Select field of study</option>
-                                <option value="Computer Engineering">Computer Engineering</option>
-                                <option value="Industrial Engineering">Industrial Engineering</option>
-                                <option value="Mathematics and Modeling">Mathematics and Modeling</option>
-                                <option value="Electrical Engineering">Electrical Engineering</option>
-                                <option value="Mechanical Engineering">Mechanical Engineering</option>
-                                <option value="Civil Engineering">Civil Engineering</option>
-                            </select>
-                        </div>
-
-                        <label for="skills" style="font-size: 1.1rem;color: black;">Skills:</label>
+                    <div class="mb-3">
+                        <label for="skills" class="form-label">Skills:</label>
                         <textarea class="form-control" id="skills" rows="3" name="skills"></textarea>
+                    </div>
 
-                        <label for="hobbies" style="font-size: 1.1rem;color: black;">Hobbies:</label>
+                    <div class="mb-3">
+                        <label for="hobbies" class="form-label">Hobbies:</label>
                         <textarea class="form-control" id="hobbies" rows="3" name="hobbies"></textarea>
+                    </div>
 
-                        <label for="description" style="font-size: 1.1rem;color: black;">Anything to add or to suggest
-                            ?</label>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Anything to add or suggest?</label>
                         <textarea class="form-control" id="description" rows="3" name="other"></textarea>
+                    </div>
 
-                        <div class="d-flex justify-content-center">
-                            <button class="btn btn-primary rounded-pill py-3 px-5" type="submit"
-                                    style="margin-top: 3rem; margin-left: -1rem; background-color: #1c2035;"
-                                    id="bouton1">
-                                Send Form
-                            </button>
-                        </div>
-
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-primary rounded-pill py-3 px-5" type="submit"
+                                style="background-color: #1c2035;">
+                            Send Form
+                        </button>
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
 </div>
+
 <!-- join us End -->
 
 
