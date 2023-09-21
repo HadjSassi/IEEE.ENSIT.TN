@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Redirect back to the original page
-    header("Location: index.html");
+    header("Location: index.php");
     exit;
 }
 ?>

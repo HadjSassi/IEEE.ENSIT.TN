@@ -1,0 +1,161 @@
+<?php
+function generate_random_unique_values($count, $min = 1, $max = 1000) {
+    if ($count > ($max - $min + 1)) {
+        echo "Cannot generate $count distinct values between $min and $max.";
+        return [];
+    }
+
+    // Use year, month, day, hour, and minute as the seed for the random number generator
+    $seed = date('YmddHi');
+    srand((int)$seed); // Convert to integer for seed
+
+    $unique_values = [];
+    while (count($unique_values) < $count) {
+        $random_value = mt_rand($min, $max);
+
+        if (!in_array($random_value, $unique_values)) {
+            $unique_values[] = $random_value;
+        }
+    }
+
+    return $unique_values;
+}
+
+$distinct_values = generate_random_unique_values(100);
+
+// Encode the array as JSON
+$json_values = json_encode($distinct_values);
+
+// Save the JSON to a file
+//file_put_contents('random_values.json', $json_values);
+?>
+<script id="distinct-values" type="application/json"><?php echo $json_values; ?></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IEEE ENSIT TYPO</title>
+<link rel="icon" type="image/x-icon" href="images/cs1.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/load.css">
+<link rel="stylesheet" href="css/formulaire.css">
+<link rel="stylesheet" href="css/game.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body onload="loading()">
+<div class="heading">
+    <img src="images/ieee%20(1).png" alt="logo ieee" class="logo">
+    <p class="title-heading">IEEE ENSIT TYPO 1.0</p>
+    <img src="images/cswhite.png" alt="logo cs" class="logo">
+</div>
+
+<div class="window" id="container-game" style="display: none;">
+    <div class="badge">
+        <div class="badge-icon" id="badge-icon" onclick="openLogin()">
+            <i class="fa fa-user icon"></i>
+            <span id="login-name">Anonymous</span>
+        </div>
+    </div>
+    <div class="container">
+        <p id="score" style="display: none;">Your Score:</p> <h4 id="score0"></h4>
+        <div class="header">
+            <div class="wpm">
+                <div class="header_text">WPM</div>
+                <div class="curr_wpm">100</div>
+            </div>
+            <div class="errors">
+                <div class="header_text">Errors</div>
+                <div class="curr_errors">0</div>
+            </div>
+            <div class="timer">
+                <div class="header_text">Time</div>
+                <div class="curr_time">60s</div>
+            </div>
+            <div class="accuracy">
+                <div class="header_text">%Accuracy</div>
+                <div class="curr_accuracy">100</div>
+            </div>
+        </div>
+        <div class="quote"></div>
+        <textarea class="input_area" placeholder="Start typing here..." oninput="processCurrentText()"
+        ></textarea>
+        <div>
+            <!--          <button class="game_btn" id="btnStart" onclick="startGame()">Start</button>-->
+            <div>
+                <button style="cursor: pointer" class="game_btn" id="btnEasy" onclick="selectDifficulty('easy')">Easy</button>
+                <button style="cursor: pointer" class="game_btn" id="btnMedium" onclick="selectDifficulty('medium')">Medium</button>
+                <button style="cursor: pointer" class="game_btn" id="btnHard" onclick="selectDifficulty('hard')">Hard</button>
+                <button style="cursor: pointer" class="game_btn" id="btnRandom" onclick="selectDifficulty('random')">Random</button>
+            </div>
+        </div>
+        <button style="cursor: pointer; display: none;" class="game_btn" id="restart" onclick="startGame()">Restart The Same Level</button>
+    </div>
+</div>
+<div class="window formulaire" id="formulaire" style="display: none;">
+    <form id="registration-form" action="">
+        <h2 class="form-title">Register</h2>
+        <div class="container2">
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input id="firstName" class="input-field" type="text" placeholder="FirstName" name="firstName" />
+            </div>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input id="lastName" class="input-field" type="text" placeholder="LastName" name="lastName" />
+            </div>
+        </div>
+        <div class="container2">
+            <span id="firstName-error" class="error-message"></span>
+            <span id="lastName-error" class="error-message"></span>
+        </div>
+
+        <!--<div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input id="email" class="input-field" type="text" placeholder="Email" name="email" >
+        </div>
+        <span id="email-error" class="error-message"></span>
+
+        <div class="input-container">
+          <i class="fa fa-phone icon"></i>
+          <input id="phoneNumber" class="input-field" type="tel" placeholder="Phone Number" name="phoneNumber" >
+        </div>
+        <span id="phoneNumber-error" class="error-message"></span>
+
+        <div class="input-container">
+          <i class="fa fa-leanpub icon" style="height: 37px;"></i>
+          <select id="engineering-field" class="custom-select">
+            <option value="">Engineering Specialization</option>
+            <option value="computer">Computer Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="industrial">Industrial Engineering</option>
+            <option value="electrical">Electrical Engineering</option>
+            <option value="math">Mathematics and Modeling Engineering</option>
+            <option value="mechanical">Mechanical Engineering</option>
+          </select>
+        </div>
+        <span id="engineeringField-error" class="error-message"></span>
+-->
+        <button type="submit" class="btn">Play Now</button>
+    </form>
+</div>
+<div class="window load" id="load">
+    <div class="heading1" style="z-index:10;">
+        <img src="images/ieee%20(1).png" alt="logo ieee" class="logo">
+        <img src="images/cswhite.png" alt="logo cs" class="logo">
+    </div>
+    <div class="load-center" >
+        <h1 class="title-window">Welcome in IEEE ENSIT </h1>
+        <div class="loader"></div>
+        <h2 class="wait">Wait ...</h2>
+    </div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/load.js"></script>
+<script src="js/formulaire.js"></script>
+<script src="js/seedrandom.min.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
