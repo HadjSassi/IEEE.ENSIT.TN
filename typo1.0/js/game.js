@@ -35,17 +35,18 @@ let index = 0;
 function updateQuote() {
     if (quotes_array.length === 0) {
         // All phrases have been used, reset the array
-        // quotes_array = original_quotes_array.slice();
+        quotes_array = original_quotes_array.slice();
         index = 0;
     }
 
     quote_text.textContent = null;
-    current_quote = quotes_array[index];
+    current_quote = quotes_array[0];
 
     // Remove the selected phrase from the array
+    quotes_array.splice(index,1);
     // Update the main quotes_array only when quotes_array is empty
     if (quotes_array.length === 0) {
-        quotes_array = [];
+        quotes_array = original_quotes_array.slice();
     }
 
     current_quote.split('').forEach(char => {
@@ -102,7 +103,7 @@ function processCurrentText() {
     // if current text is completely typed
     // irrespective of errors
     if (curr_input.length === current_quote.length) {
-        index++;
+        // index++;
         updateQuote();
 
         // update total errors
@@ -154,6 +155,7 @@ function finishGame() {
     // display wpm
     wpm_group.style.display = "block";
     timer_group.style.display = "none";
+    //todo bech nsajel el score with the players
 
 }
 
@@ -170,22 +172,27 @@ function selectDifficulty(difficulty) {
     switch (difficulty) {
         case 'easy':
             quotes_array = [...quotes_easy];
+            original_quotes_array = [...quotes_easy];
             quotes_array = shuffleArray(quotes_array);
             break;
         case 'medium':
             quotes_array = [...quotes_medium];
+            original_quotes_array = [...quotes_medium];
             quotes_array = shuffleArray(quotes_array);
             break;
         case 'hard':
             quotes_array = [...quotes_hard];
+            original_quotes_array = [...quotes_hard];
             quotes_array = shuffleArray(quotes_array);
             break;
         case 'random':
             quotes_array = combineArrays([quotes_easy, quotes_medium, quotes_hard]);
+            original_quotes_array = combineArrays([quotes_easy, quotes_medium, quotes_hard]);
             quotes_array = shuffleArray(quotes_array);
             break;
         default:
             quotes_array = combineArrays([quotes_easy, quotes_medium, quotes_hard]);
+            original_quotes_array = combineArrays([quotes_easy, quotes_medium, quotes_hard]);
             break;
     }
 

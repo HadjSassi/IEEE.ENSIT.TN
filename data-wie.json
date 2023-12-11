@@ -1,139 +1,157 @@
 {
-    "team": {
-        "2024-2023": [
-            {
-                "image": "img/wie/Team/2024-2023/1.jpg",
-                "name": "Lina Saaii",
-                "role": "ChairWoman",
-                "facebook": "https://www.facebook.com/lina.sai.14/",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": "https://www.linkedin.com/in/lina-saaii-a47517203/"
-            },
-            {
-                "image": "img/wie/Team/2024-2023/2.jpg",
-                "name": "Baha Eddine Hammou",
-                "role": "Vice Chair",
-                "facebook": "https://www.facebook.com/baha.eddine.hammou",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": "https://www.linkedin.com/in/baha-eddine-hammou-95400b257/?originalSubdomain=tn"
-            },
-            {
-                "image": "img/wie/Team/2024-2023/3.jpg",
-                "name": "Wafa Zoghlami",
-                "role": "General Secretary",
-                "facebook": "https://www.facebook.com/profile.php?id=100012691785125",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": "https://www.linkedin.com/in/wafa-zoghlami-427855274/"
-            }
-        ],
-        "2023-2022": [
-            {
-                "image": "img/wie/Team/2023-2022/1.jpg",
-                "name": "Gadour Salma",
-                "role": "ChairWoman",
-                "facebook": "https://www.facebook.com/salma.gaddour",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            {
-                "image": "img/wie/Team/2023-2022/2.jpg",
-                "name": "Yaakoubi Siwar",
-                "role": "Vice ChairWoman",
-                "facebook": "https://www.facebook.com/profile.php?id=100009703362464",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": "https://www.linkedin.com/in/siwar-yaakoubi-8a2453228/"
-            },
-            {
-                "image": "img/wie/Team/2023-2022/3.jpg",
-                "name": "Masmodi Safa",
-                "role": "General Secretary",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            }
-        ],
-        "2022-2021": [
-            {
-                "image": "img/wie/team/2021-2022/1.jpg",
-                "name": "Selmi Wiem",
-                "role": "ChairWoman",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            {
-                "image": "img/wie/team/2021-2022/2.jpg",
-                "name": "Chaouachi Farah",
-                "role": "Vice Chair",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            {
-                "image": "img/wie/team/2021-2022/3.jpg",
-                "name": "Trabelsi Dorsaf",
-                "role": "Training manager",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            {
-                "image": "img/wie/team/2021-2022/4.jpg",
-                "name": "Ali Rania",
-                "role": "Treasurer",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            {
-                "image": "img/wie/team/2021-2022/5.jpg",
-                "name": "Mzoughi Ameni",
-                "role": "Webmaster",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            },
-            {
-                "image": "img/wie/team/2021-2022/6.jpg",
-                "name": "Ouardani Dina",
-                "role": "General Secretary",
-                "facebook": "",
-                "twitter": "",
-                "instagram": "",
-                "linkedin": ""
-            }
-        ]
-    },
-    "overview":"Engaging women engineers, scientists, academia, and industry professionals from all areas of engineering, the Women in Engineering (WIE) community within the IEEE sets the standard for fostering diversity, inclusion, and innovation in the field of engineering. Through conferences, publications, and programs, and by creating a supportive network for women engineers at every stage of their careers, WIE empowers, shapes, and guides the future of not only its members but the greater engineering community as well, enabling new opportunities to make a positive impact on our world.",
-    "about": {
-        "paragraph":"WIE is a global movement for Women in Engineering dedicated to promoting gender diversity and inclusivity in engineering. It addresses the underrepresentation of women in the field, fostering an equitable environment for all engineers. The IEEE WIE ENSIT chapter follows this lead, aiming to recruit and retain women in technical fields and create a vibrant community of male and female IEEE members innovating for humanity's benefit. WIE's initiatives include empowering women engineers through professional development, providing mentorship and networking opportunities, inspiring young girls through outreach and education, advocating for gender equality, supporting women in leadership roles, conducting research, and collaborating to achieve gender equality in engineering. By leveraging diverse talents, WIE aims to enrich the engineering domain and solve complex challenges inclusively.",
-        "linkbtn":"https://wie.ieee.org/",
-        "msg":"So... what are you waiting for to be part of us ? 🤔"
-    },
-    "joinUs":{
-        "title": "Become a Part of IEEE WIE Student Chapter",
-        "paragraph1":"Welcome to the IEEE Women in Engineering (WIE) Student Chapter! If you're passionate about promoting gender diversity and inclusivity in engineering, join our vibrant community of like-minded individuals. At IEEE WIE Student Chapter, we provide numerous opportunities for learning, networking, and skill development in the field of engineering, with a special focus on empowering women in technical disciplines.",
-        "paragraph2":"Whether you're an aspiring engineer or a seasoned professional, there's a place for you at IEEE WIE Student Chapter. Engage in workshops, seminars, and outreach programs that inspire and support women pursuing engineering careers. Together, let's work towards creating a more equitable and innovative engineering community for the benefit of all."
-    },
-    "footer": {
-        "about": "Join the inspiring community of IEEE WIE Women in Engineering Chapter - Empowering Women Tech Enthusiasts Since 2021. Elevate your career and skills to new heights!",
-        "facebook": "https://www.facebook.com/profile.php?id=100066770896698",
-        "youtube": "https://www.youtube.com/@ieeeensit2837",
-        "instagram": "https://www.instagram.com/ieee_wie_ensit/",
-        "linkedin": "https://www.linkedin.com/company/ieee-ensit-student-branch/",
-        "email": "ieee.ensit.wie@gmail.com",
-        "location": "05 Ave Taha Hussein, Tunis 1008, ENSIT",
-        "phone": "+216 95 741 882"
-    }
+  "team": {
+    "2024-2023": [
+      {
+        "image": "img/wie/Team/2024-2023/1.jpg",
+        "name": "Lina Saaii",
+        "role": "ChairWoman",
+        "facebook": "https://www.facebook.com/lina.sai.14/",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": "https://www.linkedin.com/in/lina-saaii-a47517203/"
+      },
+      {
+        "image": "img/wie/Team/2024-2023/2.jpg",
+        "name": "Baha Eddine Hammou",
+        "role": "Vice Chair",
+        "facebook": "https://www.facebook.com/baha.eddine.hammou",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": "https://www.linkedin.com/in/baha-eddine-hammou-95400b257/?originalSubdomain=tn"
+      },
+      {
+        "image": "img/wie/Team/2024-2023/3.jpg",
+        "name": "Wafa Zoghlami",
+        "role": "General Secretary",
+        "facebook": "https://www.facebook.com/profile.php?id=100012691785125",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": "https://www.linkedin.com/in/wafa-zoghlami-427855274/"
+      },
+      {
+        "image": "img/wie/Team/2024-2023/StaffPosters_MaySelmi.jpg",
+        "name": "May Selmi",
+        "role": "Event Manager",
+        "facebook": "https://www.facebook.com/profile.php?id=100090474697290",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/Team/2024-2023/StaffPosters_MedAmineElyanoubli.jpg",
+        "name": "Mohamed Amine Elyanoubli",
+        "role": "Treasurer",
+        "facebook": "https://www.facebook.com/amine.inoubli.5",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      }
+    ],
+    "2023-2022": [
+      {
+        "image": "img/wie/Team/2023-2022/1.jpg",
+        "name": "Gadour Salma",
+        "role": "ChairWoman",
+        "facebook": "https://www.facebook.com/salma.gaddour",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/Team/2023-2022/2.jpg",
+        "name": "Yaakoubi Siwar",
+        "role": "Vice ChairWoman",
+        "facebook": "https://www.facebook.com/profile.php?id=100009703362464",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": "https://www.linkedin.com/in/siwar-yaakoubi-8a2453228/"
+      },
+      {
+        "image": "img/wie/Team/2023-2022/3.jpg",
+        "name": "Masmodi Safa",
+        "role": "General Secretary",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      }
+    ],
+    "2022-2021": [
+      {
+        "image": "img/wie/team/2021-2022/1.jpg",
+        "name": "Selmi Wiem",
+        "role": "ChairWoman",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/team/2021-2022/2.jpg",
+        "name": "Chaouachi Farah",
+        "role": "Vice Chair",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/team/2021-2022/3.jpg",
+        "name": "Trabelsi Dorsaf",
+        "role": "Training manager",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/team/2021-2022/4.jpg",
+        "name": "Ali Rania",
+        "role": "Treasurer",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/team/2021-2022/5.jpg",
+        "name": "Mzoughi Ameni",
+        "role": "Webmaster",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      },
+      {
+        "image": "img/wie/team/2021-2022/6.jpg",
+        "name": "Ouardani Dina",
+        "role": "General Secretary",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": ""
+      }
+    ]
+  },
+  "overview": "Engaging women engineers, scientists, academia, and industry professionals from all areas of engineering, the Women in Engineering (WIE) community within the IEEE sets the standard for fostering diversity, inclusion, and innovation in the field of engineering. Through conferences, publications, and programs, and by creating a supportive network for women engineers at every stage of their careers, WIE empowers, shapes, and guides the future of not only its members but the greater engineering community as well, enabling new opportunities to make a positive impact on our world.",
+  "about": {
+    "paragraph": "WIE is a global movement for Women in Engineering dedicated to promoting gender diversity and inclusivity in engineering. It addresses the underrepresentation of women in the field, fostering an equitable environment for all engineers. The IEEE WIE ENSIT chapter follows this lead, aiming to recruit and retain women in technical fields and create a vibrant community of male and female IEEE members innovating for humanity's benefit. WIE's initiatives include empowering women engineers through professional development, providing mentorship and networking opportunities, inspiring young girls through outreach and education, advocating for gender equality, supporting women in leadership roles, conducting research, and collaborating to achieve gender equality in engineering. By leveraging diverse talents, WIE aims to enrich the engineering domain and solve complex challenges inclusively.",
+    "linkbtn": "https://wie.ieee.org/",
+    "msg": "So... what are you waiting for to be part of us ? 🤔"
+  },
+  "joinUs": {
+    "title": "Become a Part of IEEE WIE Student Chapter",
+    "paragraph1": "Welcome to the IEEE Women in Engineering (WIE) Student Chapter! If you're passionate about promoting gender diversity and inclusivity in engineering, join our vibrant community of like-minded individuals. At IEEE WIE Student Chapter, we provide numerous opportunities for learning, networking, and skill development in the field of engineering, with a special focus on empowering women in technical disciplines.",
+    "paragraph2": "Whether you're an aspiring engineer or a seasoned professional, there's a place for you at IEEE WIE Student Chapter. Engage in workshops, seminars, and outreach programs that inspire and support women pursuing engineering careers. Together, let's work towards creating a more equitable and innovative engineering community for the benefit of all."
+  },
+  "footer": {
+    "about": "Join the inspiring community of IEEE WIE Women in Engineering Chapter - Empowering Women Tech Enthusiasts Since 2021. Elevate your career and skills to new heights!",
+    "facebook": "https://www.facebook.com/profile.php?id=100066770896698",
+    "youtube": "https://www.youtube.com/@ieeeensit2837",
+    "instagram": "https://www.instagram.com/ieee_wie_ensit/",
+    "linkedin": "https://www.linkedin.com/company/ieee-ensit-student-branch/",
+    "email": "ieee.ensit.wie@gmail.com",
+    "location": "05 Ave Taha Hussein, Tunis 1008, ENSIT",
+    "phone": "+216 95 741 882"
+  }
 }
