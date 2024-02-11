@@ -70,7 +70,7 @@
                                 <a class="btn btn-link" href="contact.html">Contact Us</a>
                                 <a class="btn btn-link" href="gallery.php">Gallery</a>
                                 <a class="btn btn-link" href="index.html#teamindex">Team</a>
-                                <a class="btn btn-link" href="alumni1.html">Allmuni2021</a>
+                                <a class="btn btn-link" href="alumni3.html">Allmuni2023</a>
                                 <a class="btn btn-link" href="alumni2.html">Allumni2022</a>
                                 <a class="btn btn-link" href="index.html#chaptersIndex">Chapters</a>
 
