@@ -37,6 +37,19 @@
   }
 }
 
+.custom-btn-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn-link:hover {
+  transform: scale(1.1);
+  color: orange;
+}
+
 /********** Template CSS **********/
 :root {
   --primary: #4761FF;
@@ -215,6 +228,54 @@
     object-fit: cover;
   }
 }
+.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.visible {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sticky-top {
+  top: 0; /* Assurez-vous que la barre est bien fixée en haut */
+  z-index: 1030; /* Augmentez le z-index pour éviter qu'elle soit masquée */
+  background-color: white; /* Ajoutez une couleur de fond si nécessaire */
+}
+
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.gallery-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/4.jpg) center center no-repeat;
+  background-size: cover;
+}
+.event-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/7.jpg) center center no-repeat;
+  background-size: cover;
+}
+.alumni2-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/picsev.jpg) center center no-repeat;
+  background-size: cover;
+}
+.alumni3-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/3.jpg) center center no-repeat;
+  background-size: cover;
+}
+.alumni-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/20.jpg) center center no-repeat;
+  background-size: cover;
+}
+.contact-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/pic2.jpeg) center center no-repeat;
+  background-size: cover;
+}
+.joinus-header {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/pic3.jpg) center center no-repeat;
+  background-size: cover;
+}
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
   color: var(--light);
@@ -237,6 +298,39 @@
   border-color: rgba(0, 0, 0, .03) !important;
 }
 
+
+/*** About ***/
+.about {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/6.jpg) left center no-repeat;
+  background-size: cover;
+}
+/*** About ***/
+.about-cs {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/261.jpg) left center no-repeat;
+  background-size: cover;
+}
+/*** About ***/
+.about-aess {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/5.jpg) left center no-repeat;
+  background-size: cover;
+}
+/*** About ***/
+.about-wie {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/aadad.jpg) left center no-repeat;
+  background-size: cover;
+}
+.about-ras {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/38.jpg) left center no-repeat;
+  background-size: cover;
+}
+.about-pes {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../public/img/45.jpg) left center no-repeat;
+  background-size: cover;
+}
+.about-ias {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(/public/img/18.JPG) left center no-repeat;
+  background-size: cover;
+}
 
 .btn-play {
   position: relative;

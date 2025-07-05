@@ -1,7 +1,26 @@
 import {NavLink} from "react-router-dom";
+import {useEffect, useState} from "react";
 
 export default function Navbar() {
-    return (<div className="container-fluid bg-white sticky-top">
+    const [isVisible, setNavbarVisible] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            if (scrollY === 0) {
+                setNavbarVisible(true);
+            } else if (scrollY > 5 && scrollY <= 500) {
+                setNavbarVisible(false);
+            } else if (scrollY > 500) {
+                setNavbarVisible(true);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    return (
+        <div className={`container-fluid bg-white sticky-top ${isVisible ? "visible" : "hidden"}`}>
             <div className="container">
                 <nav className="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
                     <NavLink to="/" className="navbar-brand d-lg-none">
@@ -97,5 +116,6 @@ export default function Navbar() {
                     </div>
                 </nav>
             </div>
-        </div>);
+        </div>
+    );
 }

@@ -6,10 +6,23 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Galleries";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
+import { useEffect, useState } from "react";
 
 function App() {
+    const [showScroll, setShowScroll] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setShowScroll(window.scrollY > 300);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <Router>
             <Navbar />
@@ -18,7 +31,20 @@ function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-            <Footer />
+            {showScroll && (
+                <button
+                    className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+                    onClick={scrollToTop}
+                    style={{
+                        position: "fixed",
+                        bottom: "20px",
+                        right: "20px",
+                        zIndex: 1000,
+                    }}
+                >
+                    <i className="bi bi-arrow-up"></i>
+                </button>
+            )}
         </Router>
     );
 }
