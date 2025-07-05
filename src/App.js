@@ -7,6 +7,7 @@ import Gallery from "./pages/Galleries";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
+import ScrollUpButton from "./atoms/ScrollUpButton";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
@@ -31,20 +32,7 @@ function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-            {showScroll && (
-                <button
-                    className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
-                    onClick={scrollToTop}
-                    style={{
-                        position: "fixed",
-                        bottom: "20px",
-                        right: "20px",
-                        zIndex: 1000,
-                    }}
-                >
-                    <i className="bi bi-arrow-up"></i>
-                </button>
-            )}
+            <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
         </Router>
     );
 }
