@@ -1,5 +1,5 @@
 import CarouselItem from "../atoms/CarouselItem";
-import NavigationButton from "../atoms/NavigationButton";
+import NavigationButton from "../atoms/buttons/NavigationButton";
 
 export default function Carrousel() {
     return <>

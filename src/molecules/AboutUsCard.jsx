@@ -1,3 +1,5 @@
+import RoundedButton from "../atoms/buttons/RoundedButton";
+
 export default function AboutUsCard(props) {
     return <>
         <div className={`container-xxl my-5 ${props.image}`}>
@@ -10,7 +12,10 @@ export default function AboutUsCard(props) {
                             <h5 className="mb-4 text-black-50 text-center">
                                 {props.descrition}
                             </h5>
-                            <a className="btn btn-primary rounded-pill py-3 px-5" href={props.link}>Explore More</a>
+                            <RoundedButton
+                                text="Explore More"
+                                link={props.link}
+                            />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import QuickLink from "../../atoms/QuickLink";
+import QuickLink from "../../atoms/contacts/QuickLink";
 import React from "react";
 import SmallTitle from "../../atoms/SmallTitle";
 

@@ -1,4 +1,4 @@
-import AboutUsCard from "../atoms/AboutUsCard";
+import AboutUsCard from "../molecules/AboutUsCard";
 
 export default function About() {
     return (

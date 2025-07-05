@@ -1,10 +1,10 @@
-import Location from "../../atoms/Location";
-import PhoneNumber from "../../atoms/PhoneNumber";
-import Email from "../../atoms/Email";
-import Instagram from "../../atoms/Instagram";
-import Facebook from "../../atoms/Facebook";
-import Youtube from "../../atoms/Youtube";
-import LinkedIn from "../../atoms/LinkedIn";
+import Location from "../../atoms/contacts/Location";
+import PhoneNumber from "../../atoms/contacts/PhoneNumber";
+import Email from "../../atoms/contacts/Email";
+import Instagram from "../../atoms/contacts/Instagram";
+import Facebook from "../../atoms/contacts/Facebook";
+import Youtube from "../../atoms/contacts/Youtube";
+import LinkedIn from "../../atoms/contacts/LinkedIn";
 import React from "react";
 import SmallTitle from "../../atoms/SmallTitle";
 

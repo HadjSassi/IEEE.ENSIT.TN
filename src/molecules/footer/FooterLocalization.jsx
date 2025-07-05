@@ -1,4 +1,4 @@
-import Localisation from "../../atoms/Localisation";
+import Localisation from "../../atoms/contacts/Localisation";
 import React from "react";
 import SmallTitle from "../../atoms/SmallTitle";
 
