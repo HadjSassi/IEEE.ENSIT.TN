@@ -10,6 +10,7 @@ export default function Recruitment() {
             <CoverPhoto
                 title="Join the family"
                 image="img/logos/ieee%20(1).png"
+                backgroundClassName="joinus-header "
             />
 
             <PageIntro
