@@ -8,10 +8,11 @@ export default function Logo(props) {
     };
 
     return <>
-        <img src={mergedProps.image} width="200" alt="logo sb ieee" className="mb-3"/>
+        <img src={mergedProps.image} width={mergedProps.width} alt="logo sb ieee" />
     </>
 }
 
 Logo.defaultProps = {
-    image: "img/logos/ieee%20(1).png"
+    image: "img/logos/ieee%20(1).png",
+    width: "200"
 };
