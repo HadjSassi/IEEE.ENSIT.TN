@@ -27,6 +27,7 @@ export default function Cs(props) {
             img1="img/26.jpg"
             img2="img/pic0.jpg"
             logo="img/logos/cswhite.png"
+            title="IEEE <strong>CS</strong> ENSIT Student Branch Chapter"
         />
         <PageIntro
             title={"Chapter Overview"}

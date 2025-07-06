@@ -13,6 +13,7 @@ import Alumni3 from "./pages/alumni/Alumni3";
 import Alumni2 from "./pages/alumni/Alumni2";
 import Alumni1 from "./pages/alumni/Alumni1";
 import Cs from "./pages/units/Cs";
+import Ras from "./pages/units/Ras";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/alumni2" element={<Alumni2 />} />
                 <Route path="/alumni1" element={<Alumni1 />} />
                 <Route path="/cs" element={<Cs />} />
+                <Route path="/ras" element={<Ras />} />
             </Routes>
             <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
         </Router>

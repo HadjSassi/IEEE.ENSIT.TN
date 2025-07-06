@@ -1,0 +1,78 @@
+/* Styles pour les icônes */
+.ras-page .iconras {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #700b77;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ras-page .iconras:hover {
+    background-color: white;
+    color: #700b77;
+}
+
+/* Styles pour les boutons "Précédent" et "Suivant" du carousel */
+.ras-page #header-carousel .carousel-control-prev-icon-ras,
+.ras-page #header-carousel .carousel-control-next-icon-ras {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: #700b77;
+    border: 15px solid #700b77;
+}
+
+/* Styles pour les éléments du menu déroulant */
+.ras-page .dropdown-menu a.dropdown-item:visited,
+.ras-page .dropdown-menu a.dropdown-item:hover {
+    background-color: #700b77;
+}
+
+/* Styles pour les liens de la barre de navigation */
+.ras-page .navbar .navbar-nav .nav-link:hover,
+.ras-page .navbar .navbar-nav .nav-link.active {
+    color: #860505;
+}
+
+/* Styles pour les icônes de contrôle du carousel */
+.ras-page .carousel-control-prev-icon,
+.ras-page .carousel-control-next-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: #860505;
+    border: 15px solid #860505;
+}
+
+/* Styles pour les boutons */
+.ras-page .btn-primary {
+    background-color: #700b77;
+    border-color: #700b77;
+}
+
+/* Styles pour le texte */
+.ras-page .text-primary {
+    color: #700b77 !important;
+}
+
+/* Styles pour les arrière-plans sombres */
+.ras-page .bg-dark {
+    background-color: #700b77 !important;
+}
+
+/* Styles pour le bouton de retour en haut */
+.ras-scrollup {
+    background-color: #700b77;
+    border-color: #700b77;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ras-scrollup:hover {
+    background-color: white;
+    color: #700b77;
+}

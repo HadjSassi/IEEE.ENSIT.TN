@@ -13,6 +13,7 @@ export default function Carrousel(props) {
                         left={false}
                         backgroundImage={props.img2}
                         logo={props.logo}
+                        title={props.title}
                     />
                 </div>
                 <NavigationButton
