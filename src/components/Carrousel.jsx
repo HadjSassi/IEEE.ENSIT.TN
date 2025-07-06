@@ -1,17 +1,18 @@
 import CarouselItem from "../atoms/CarouselItem";
 import NavigationButton from "../atoms/buttons/NavigationButton";
 
-export default function Carrousel() {
+export default function Carrousel(props) {
     return <>
             <div id="header-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <CarouselItem
                         active={true}
-                        backgroundImage={'img/0.png'}
+                        backgroundImage={props.img1}
                     />
                     <CarouselItem
                         left={false}
-                        backgroundImage={'img/pic.jpg'}
+                        backgroundImage={props.img2}
+                        logo={props.logo}
                     />
                 </div>
                 <NavigationButton

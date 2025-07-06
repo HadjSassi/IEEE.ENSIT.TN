@@ -20,7 +20,7 @@ export default function WebNavbar (props){
                 <JoinUsNavbar/>
             </div>
             <div className="ms-auto d-none d-lg-block">
-                <Logo width="150" image='/img/logos/ieee%20(3).png'/>
+                <Logo width="150" image={props.logoSrc}/>
             </div>
         </div>
     </>

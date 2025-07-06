@@ -22,7 +22,11 @@ export default function Home() {
     }
     return (
         <div>
-            <Carrousel />
+            <Carrousel
+                img1="img/0.png"
+                img2="img/pic.jpg"
+                logo="img/logos/ieee%20(1).png"
+            />
             <Statistics/>
             <AboutUsCard
                 direction="left"

@@ -12,6 +12,7 @@ import Recruitment from "./pages/Recruitment";
 import Alumni3 from "./pages/alumni/Alumni3";
 import Alumni2 from "./pages/alumni/Alumni2";
 import Alumni1 from "./pages/alumni/Alumni1";
+import Cs from "./pages/units/Cs";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
@@ -39,6 +40,7 @@ function App() {
                 <Route path="/alumni3" element={<Alumni3 />} />
                 <Route path="/alumni2" element={<Alumni2 />} />
                 <Route path="/alumni1" element={<Alumni1 />} />
+                <Route path="/cs" element={<Cs />} />
             </Routes>
             <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
         </Router>
