@@ -9,6 +9,9 @@ import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import ScrollUpButton from "./atoms/ScrollUpButton";
 import Recruitment from "./pages/Recruitment";
+import Alumni3 from "./pages/alumni/Alumni3";
+import Alumni2 from "./pages/alumni/Alumni2";
+import Alumni1 from "./pages/alumni/Alumni1";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
@@ -33,6 +36,9 @@ function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/joinus" element={<Recruitment />} />
+                <Route path="/alumni3" element={<Alumni3 />} />
+                <Route path="/alumni2" element={<Alumni2 />} />
+                <Route path="/alumni1" element={<Alumni1 />} />
             </Routes>
             <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
         </Router>
