@@ -15,6 +15,11 @@ import Alumni1 from "./pages/alumni/Alumni1";
 import Cs from "./pages/units/Cs";
 import Ras from "./pages/units/Ras";
 import {getRouteConfig} from "./utils/routeConfig";
+import PageNotFound from "./pages/PageNotFound";
+import Ias from "./pages/units/Ias";
+import Aess from "./pages/units/Aess";
+import Pes from "./pages/units/Pes";
+import Wie from "./pages/units/Wie";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
@@ -53,6 +58,11 @@ function App() {
                 <Route path="/alumni1" element={<Alumni1/>}/>
                 <Route path="/cs" element={<Cs/>}/>
                 <Route path="/ras" element={<Ras/>}/>
+                <Route path="/ias" element={<Ias/>}/>
+                <Route path="/aess" element={<Aess/>}/>
+                <Route path="/pes" element={<Pes/>}/>
+                <Route path="/wie" element={<Wie/>}/>
+                <Route path="*" element={<PageNotFound/>}/>
             </Routes>
             <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
         </>
