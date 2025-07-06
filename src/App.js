@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import ScrollUpButton from "./atoms/ScrollUpButton";
+import Recruitment from "./pages/Recruitment";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/joinus" element={<Recruitment />} />
             </Routes>
             <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
         </Router>
