@@ -1,17 +1,9 @@
 import {useLocation} from "react-router-dom";
+import {getRouteConfig} from "../utils/routeConfig";
 
 export default function ScrollUpButton(props) {
     const location = useLocation();
-    let buttonClass = "btn-primary";
-
-    switch (location.pathname) {
-        case "/cs":
-            buttonClass = "btn-warning";
-            break;
-        default:
-            buttonClass = "btn-primary";
-            break;
-    }
+    const {buttonClass} = getRouteConfig(location.pathname);
 
     return (
         <button

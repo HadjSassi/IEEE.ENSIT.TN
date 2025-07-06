@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
 import MobileNavbar from "../molecules/navbar/MobileNavbar";
 import WebNavbar from "../molecules/navbar/WebNavbar";
+import {getRouteConfig} from "../utils/routeConfig";
 
 export default function Navbar() {
     const [isVisible, setNavbarVisible] = useState(true);
@@ -10,16 +11,9 @@ export default function Navbar() {
     const [navbarClass, setNavbarClass] = useState("");
 
     useEffect(() => {
-        switch (location.pathname) {
-            case "/cs":
-                setLogoSrc("img/logos/cs.png");
-                setNavbarClass("cs-page");
-                break;
-            default:
-                setLogoSrc("/img/logos/ieee%20(3).png");
-                setNavbarClass("");
-                break;
-        }
+        const {logoSrc, navbarClass} = getRouteConfig(location.pathname);
+        setLogoSrc(logoSrc);
+        setNavbarClass(navbarClass);
     }, [location.pathname]);
 
     useEffect(() => {
