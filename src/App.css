@@ -152,9 +152,16 @@
   outline: none;
 }
 
-.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
+}
+
+.navbar .navbar-nav .nav-item.dropdown.show > .nav-link:not(.active) {
+  color: inherit !important;
 }
 
 .navbar .dropdown-toggle::after {

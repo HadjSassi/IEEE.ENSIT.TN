@@ -1,15 +1,17 @@
-import {NavLink} from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 
-export default function AlumniNavbar(props){
-    return <>
+export default function AlumniNavbar() {
+    const { pathname } = useLocation();
+    const isAlumniActive = /^\/alumni(\/|\d|$)/.test(pathname);
+
+    return (
         <div className="nav-item dropdown">
-            <NavLink
-                to="#"
-                className="nav-link dropdown-toggle"
+            <button
+                className={`nav-link dropdown-toggle btn btn-link ${isAlumniActive ? "active" : ""}`}
                 data-bs-toggle="dropdown"
             >
                 Alumni
-            </NavLink>
+            </button>
             <div className="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                 <NavLink to="/alumni3" className="dropdown-item">
                     2023
@@ -22,5 +24,5 @@ export default function AlumniNavbar(props){
                 </NavLink>
             </div>
         </div>
-    </>
-};
+    );
+}
