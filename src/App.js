@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Galleries";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import ScrollUpButton from "./atoms/ScrollUpButton";
 import Recruitment from "./pages/Recruitment";
 import Alumni3 from "./pages/alumni/Alumni3";
@@ -14,9 +14,19 @@ import Alumni2 from "./pages/alumni/Alumni2";
 import Alumni1 from "./pages/alumni/Alumni1";
 import Cs from "./pages/units/Cs";
 import Ras from "./pages/units/Ras";
+import {getRouteConfig} from "./utils/routeConfig";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        const {faviconSrc} = getRouteConfig(location.pathname);
+        const faviconLink = document.querySelector("link[rel='icon']");
+        if (faviconLink) {
+            faviconLink.href = faviconSrc;
+        }
+    }, [location.pathname]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,25 +37,25 @@ function App() {
     }, []);
 
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({top: 0, behavior: "smooth"});
     };
 
     return (
-        <Router>
-            <Navbar />
+        <>
+            <Navbar/>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/joinus" element={<Recruitment />} />
-                <Route path="/alumni3" element={<Alumni3 />} />
-                <Route path="/alumni2" element={<Alumni2 />} />
-                <Route path="/alumni1" element={<Alumni1 />} />
-                <Route path="/cs" element={<Cs />} />
-                <Route path="/ras" element={<Ras />} />
+                <Route path="/" element={<Home/>}/>
+                <Route path="/gallery" element={<Gallery/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/joinus" element={<Recruitment/>}/>
+                <Route path="/alumni3" element={<Alumni3/>}/>
+                <Route path="/alumni2" element={<Alumni2/>}/>
+                <Route path="/alumni1" element={<Alumni1/>}/>
+                <Route path="/cs" element={<Cs/>}/>
+                <Route path="/ras" element={<Ras/>}/>
             </Routes>
             <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
-        </Router>
+        </>
     );
 }
 
