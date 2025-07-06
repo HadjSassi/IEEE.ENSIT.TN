@@ -7,6 +7,7 @@ import AboutUsCard from "../../molecules/AboutUsCard";
 import React, {useEffect, useState} from "react";
 import Dedicace from "../../components/Dedicace";
 import "../../styles/ras.css"
+import Spinner from "../../components/Spinner";
 
 export default function Ras(props) {
     const [teamData, setTeamData] = useState(null);
@@ -18,7 +19,7 @@ export default function Ras(props) {
     }, []);
 
     if (!teamData) {
-        return <div>Chargement...</div>;
+        return <Spinner/>;
     }
 
 

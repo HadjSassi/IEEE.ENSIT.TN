@@ -7,6 +7,7 @@ import Dedicace from "../components/Dedicace";
 import Footer from "../components/Footer";
 import AboutUsCard from "../molecules/AboutUsCard";
 import React, {useEffect, useState} from "react";
+import Spinner from "../components/Spinner";
 
 export default function Home() {
     const [teamData, setTeamData] = useState(null);
@@ -18,7 +19,7 @@ export default function Home() {
     }, []);
 
     if (!teamData) {
-        return <div>Chargement...</div>;
+        return <Spinner/>;
     }
     return (
         <div>

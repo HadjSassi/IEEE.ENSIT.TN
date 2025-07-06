@@ -3,6 +3,7 @@ import CoverPhoto from "../../components/CoverPhoto";
 import Dedicace from "../../components/Dedicace";
 import Footer from "../../components/Footer";
 import AlumniGroup from "../../molecules/AlumniGroup";
+import Spinner from "../../components/Spinner";
 
 export default function Alumni2() {
     const [alumniData, setAlumniData] = useState(null);
@@ -15,7 +16,7 @@ export default function Alumni2() {
     }, []);
 
     if (!alumniData) {
-        return <div>Chargement...</div>;
+        return <Spinner/>;
     }
     return (
         <div>

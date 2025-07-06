@@ -20,9 +20,11 @@ import Ias from "./pages/units/Ias";
 import Aess from "./pages/units/Aess";
 import Pes from "./pages/units/Pes";
 import Wie from "./pages/units/Wie";
+import Spinner from "./components/Spinner";
 
 function App() {
     const [showScroll, setShowScroll] = useState(false);
+    const [loading, setLoading] = useState(true);
     const location = useLocation();
 
     useEffect(() => {
@@ -41,30 +43,42 @@ function App() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // todo remove this following useEffect before deployment
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({top: 0, behavior: "smooth"});
     };
 
     return (
         <>
-            <Navbar/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/gallery" element={<Gallery/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-                <Route path="/joinus" element={<Recruitment/>}/>
-                <Route path="/alumni3" element={<Alumni3/>}/>
-                <Route path="/alumni2" element={<Alumni2/>}/>
-                <Route path="/alumni1" element={<Alumni1/>}/>
-                <Route path="/cs" element={<Cs/>}/>
-                <Route path="/ras" element={<Ras/>}/>
-                <Route path="/ias" element={<Ias/>}/>
-                <Route path="/aess" element={<Aess/>}/>
-                <Route path="/pes" element={<Pes/>}/>
-                <Route path="/wie" element={<Wie/>}/>
-                <Route path="*" element={<PageNotFound/>}/>
-            </Routes>
-            <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
+            {loading ?
+                <Spinner/>
+                :
+                <>
+                    <Navbar/>
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/gallery" element={<Gallery/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/joinus" element={<Recruitment/>}/>
+                        <Route path="/alumni3" element={<Alumni3/>}/>
+                        <Route path="/alumni2" element={<Alumni2/>}/>
+                        <Route path="/alumni1" element={<Alumni1/>}/>
+                        <Route path="/cs" element={<Cs/>}/>
+                        <Route path="/ras" element={<Ras/>}/>
+                        <Route path="/ias" element={<Ias/>}/>
+                        <Route path="/aess" element={<Aess/>}/>
+                        <Route path="/pes" element={<Pes/>}/>
+                        <Route path="/wie" element={<Wie/>}/>
+                        <Route path="*" element={<PageNotFound/>}/>
+                    </Routes>
+                    <ScrollUpButton showScroll={showScroll} action={scrollToTop}/>
+                </>
+            }
         </>
     );
 }

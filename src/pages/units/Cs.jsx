@@ -7,6 +7,7 @@ import AboutUsCard from "../../molecules/AboutUsCard";
 import React, {useEffect, useState} from "react";
 import Dedicace from "../../components/Dedicace";
 import "../../styles/cs.css"
+import Spinner from "../../components/Spinner";
 
 export default function Cs(props) {
     const [teamData, setTeamData] = useState(null);
@@ -18,7 +19,7 @@ export default function Cs(props) {
     }, []);
 
     if (!teamData) {
-        return <div>Chargement...</div>;
+        return <Spinner/>;
     }
 
 
