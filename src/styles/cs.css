@@ -1,0 +1,70 @@
+
+
+.cs-page .iconCs {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cs-page .iconCs:hover {
+    background-color: white;
+    color: orange;
+}
+
+.cs-page #header-carousel .carousel-control-prev-icon-cs,
+.cs-page #header-carousel .carousel-control-next-icon-cs {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: orange;
+    border: 15px solid orange;
+}
+
+.cs-page .dropdown-menu a.dropdown-item:visited,
+.cs-page .dropdown-menu a.dropdown-item:hover {
+    background-color: orange;
+}
+
+.cs-page .navbar .navbar-nav .nav-link:hover,
+.cs-page .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-orange);
+}
+
+.cs-page .carousel-control-prev-icon,
+.cs-page .carousel-control-next-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: var(--bs-orange);
+    border: 15px solid var(--bs-orange);
+}
+
+.cs-page .btn-primary{
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+}
+
+.cs-page .text-primary{
+    color: var(--bs-orange) !important;
+}
+
+.cs-page .bg-dark{
+    background-color: var(--bs-orange) !important;
+}
+.cs-scrollup {
+    background-color: orange;
+    border-color: orange;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cs-scrollup:hover {
+    background-color: white;
+    color: orange;
+}
